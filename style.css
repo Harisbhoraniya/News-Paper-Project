@@ -1,0 +1,256 @@
+body{
+    font-family: 'Lobster', cursive;
+}
+.section{
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.section h2.section-head{
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+.section h2.section-head:after{
+    background: #e74c3c;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+
+}
+.container{
+    border: gray;
+}
+
+.image{
+    overflow: hidden;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease .5s;
+}
+
+.image:hover img{
+ scale: 1.1;
+}
+
+.header{
+    color: white;
+    background-color: #e74c3c;
+}
+#logo{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-family: 'Rubik Puddles', cursive;
+    color: #000;
+    font-family: 'Rubik Puddles', cursive;
+}
+#menu{
+    list-style: none;
+    /* float: right; */
+    margin: 0;
+    padding: 0; 
+}
+#menu li{
+    display: inline-block;
+}
+#menu li a{
+    color: white;
+    padding: 15px 10px;
+    display: block;
+    text-decoration: none   ;
+}
+#menu li a:hover{
+    background-color: orangered;
+}
+
+#banner{
+    background: url('../images/banner.jpg') no-repeat 0 0;
+    background-size: cover;
+}
+.banner-title{
+    padding-top: 4.5rem;
+    font-family: 'Lobster', cursive;
+}
+
+.banner-title h1{
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.banner-title p.lead{
+    color: #fff;
+    background: rgba(231, 76, 60,0.7);
+    border-radius: 10px;
+}
+
+
+
+.service-box{
+    text-align: center;
+}
+.service-box i.fa{
+    color: #e74c3c;
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+#testimonials{
+    background: url(./images/banner.jpg) no-repeat 0 0;
+    background-size: cover;
+    padding: 30px 0px;
+    position: relative;
+    color: red;
+    font-weight: 600;
+}
+#testimonials:before{
+    background: rgba(52, 73, 94, 0.7);
+    content: "";
+    /* position: absolute; */
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.testimonials img{
+    border-radius: 100%;
+    height: 70px;
+    width: 60px;
+}
+.author{
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.news-post h3 a{
+    text-decoration: none;
+    color:#e74c3c;
+    font-size: 1.5rem;
+}
+.readmore{
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: 500;
+}
+a.readmore::after{
+    content: "\f101" ;
+    font-family: FontAwesome;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+.post-date{
+    font-size: 13px;
+    margin-bottom: 2px;
+
+}
+.post-date::before{
+    content: "\f073";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+.news-post img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#footer-side{
+    color: #fff;
+    background: #34495e;
+    padding: 20px 0;
+}
+h4{
+    color: black;
+}
+.footer-widget ul{
+    color: #fff;
+    padding-top: 10px;
+}
+.footer-widget ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+.footer-widget address{
+    color: #fff;
+    padding-top: 10px;
+}
+.footer-widget h4::after{
+    content: "";
+    background: #fff;
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 5px 0;
+
+}
+#footer{
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+}
+#socical-icon{
+    list-style: none;
+    color: #fff;
+    margin: 0;
+    padding:0;
+}
+#socical-icon li{
+    display: inline-block;
+    padding-left: 5px;
+}
+#socical-icon li a{
+    color: #fff;
+    font-size: 23px;
+}
+
+.a{
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width:992px){
+    .news-post{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    #logo{
+        text-align: center;
+        margin: 10px 0;
+    }
+    #menu{
+        text-align: center;
+    }
+    .testimonials{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .service-box{
+        margin-bottom: 30px;
+    }
+    
+    .footer-widget{
+        margin-bottom: 20px;
+    }
+    #footer{
+        text-align: center;
+    }
+    #socical-icon{
+        margin-top: 10px;
+    }
+    .section{
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    .banner-title{
+        padding-top: 0%;
+    }
+    .banner-title h1{
+        font-size: 1.7rem;
+    }
+}
